@@ -1,73 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <title>Exceptional Realty Group - Luxury Homes - About</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  
-  <body>
-    
-    <h1>My Hog Bank</h1>
-    
-    
-    <h4 class="amiable">Those hogs, whom I amiably regard</h4>
-    <div class="container amiable">
-      
-      <div class="column">
-        <img class="small" src="./images/bay_of_pigs.jpg">
-        <img class="small" src="./images/augustus_gloop.jpg">
-        <img class="small" src="./images/cherub.jpg">
-      </div>
-      
-      <div class="column">
-        <img class="med" src="./images/galaxy_note.jpg">
-        <img class="small" src="./images/leggo_my_eggo.jpg">
-      </div>
-      
-      <div class="column">
-        <img class="small" src="./images/mudblood.jpg">
-      </div>
-      
-    </div>
-    
-    
-    <h4 class="indifferent">Those hogs, towards whom I am indifferent</h4>
-    <div class="container indifferent">
-      
-      <div class="column">
-        <img class="med" src="./images/porkchop.jpg">
-        <img class="small" src="./images/piggy_smalls.jpg">
-      </div>
-      
-      <div class="column">
-        <img class="small" src="./images/rainbowdash.jpg">
-      </div>
-      
-      <div class="column">
-        <img class="small" src="./images/sobriety.jpg">
-        <img class="small" src="./images/trouble.jpg">
-        <img class="small" src="./images/truffleshuffle.jpg">
-      </div>
-    
-    </div>
-    
-    
-    <h4 class="dubious">That hog, upon whom I glower dubiously</h4>
-    <div class="container dubious">
-      
-      <div class="column">
-        <img class="large" src="./images/the_prosciutto_concern.jpg">
-      </div>
-      
-      <div class="column">
-      </div>
-      
-      <div class="column">
-      </div>
-    </div>
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Apple Chancery, cursive;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
 
-  </body>
-  
-</html>
+body {
+    background-image: url("../images/white-wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container, h1 {
+  width: 80%;
+  max-width: 600px;
+  min-width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+h4 {
+  width: fit-content;
+  display: inline-block;
+  padding: 5px;
+  margin: 20px 0 0 0;
+}
+
+h4.amiable{
+    background: linear-gradient(to right, #a9a9a9, #2a4)
+}
+
+h4.indifferent{
+    background: linear-gradient(to right, #a9a9a9, #cc0)
+}
+
+h4.dubious{
+    background: linear-gradient(to right, #a9a9a9, #8b0000)
+}
+
+.amiable {
+  border: 1px solid #22aa44;
+  box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
+  background-color: #44cc66;
+
+}
+
+.indifferent {
+  border: 1px solid #cc0;
+  box-shadow:  -1px 1px #cc0, -2px 2px #cc0, -3px 3px #cc0, -4px 4px #cc0, -5px 5px #cc0;
+  background-color: #dddd22;
+}
+
+.dubious {
+  border: 1px solid #8b0000;
+  box-shadow:  -1px 1px #8b0000, -2px 2px #8b0000, -3px 3px #8b0000, -4px 4px #8b0000, -5px 5px #8b0000;
+  background-color: #dd4444;
+}
+
+.column {
+  width: 30%;
+  display: inline-block;
+}
+
+.small {
+  width: 100%;
+  height: 100%;
+}
+
+.med {
+  width: 203.5%;
+}
+
+.large {
+  width: 303%;
+}
+
+img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a9a9a9;
+  box-sizing: border-box;
+}
